@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sup</title>
+	<title>Is Google Maps down?</title>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 <body>
 <div class="centered">
 	<div class="rows">
-		<div id="header">Is
-		<object type="image/svg+xml" data="/stylesheets/googlelogo.svg" width="110em" style="vertical-align: middle;">
-		Your browser does not support SVG
-		</object>
-		Maps down?</div>
+		<div id="header">
+			Is <object type="image/svg+xml" data="/stylesheets/googlelogo.svg" width="110em" style="vertical-align: middle;"></object> Maps down?
+		</div>
+
 		<span id="answer">
-		YES
+			<script>
+				document.getElementById("answer").innerHTML = "{{works}}" == "true" ? "NO" : "YES";
+			</script>
 		</span>
 	</div>
 </div>
