@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	var works = false;
+	var works = true;
 	http.get('http://maps.google.com/', function() {
 		// Google Maps works -- this is the most likely (by far) scenario
 		//works = true;
